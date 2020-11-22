@@ -32,7 +32,7 @@
 		</dependency>
 
 		<dependency>
-			<groupId>com.airasia</groupId>
+			<groupId>com.contoso</groupId>
 			<artifactId>controller</artifactId>
 			<version>${project.version}</version>
 		</dependency>
