@@ -10,18 +10,6 @@ import javax.validation.ConstraintValidatorContext;
 
 import com.contoso.domain.command.CreateOrderCommand;
 
-//public class CreateOrderCommandValidator implements ConstraintValidator<ValidateCreateOrderCommand, Date> {
-//
-//	private static final int MAX_MONTHS = 6;
-//	
-//	@Override
-//	public boolean isValid(Date checkInDate, ConstraintValidatorContext context) {
-//		LocalDate currentDate =LocalDate.now();
-//		LocalDate futureDate = checkInDate.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
-//		Period period = Period.between(currentDate, futureDate);
-//		return period.getMonths() > MAX_MONTHS ? false : true;
-//	}
-//}
 public class CreateOrderCommandValidator implements ConstraintValidator<ValidateCreateOrderCommand, CreateOrderCommand> {
 
 	private static final int MAX_MONTHS = 6;
