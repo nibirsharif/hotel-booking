@@ -15,7 +15,7 @@ This will start application in ``http://localhost:8080``
 
 ## Create Order API
 
-``http://localhost:8080/api/v1/order/createorder``
+``http://localhost:8080/api/v1/order/create``
 
 ### Mandatory Fields
 
@@ -24,3 +24,14 @@ This will start application in ``http://localhost:8080``
 - customerId (Integer - i.e., 1)
 - roomId (Integer - i.e., 1)
 - numberOfGuests (Integer - i.e., 1)
+
+## Create Customer API
+
+``http://localhost:8080/api/v1/customer/create``
+
+### Mandatory Fields
+
+- firstName (String)
+- lastName (String)
+- number (String - i.e., abc123)
+- email (String - i.e., john@doe.com)

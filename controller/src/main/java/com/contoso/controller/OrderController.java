@@ -21,7 +21,7 @@ public class OrderController {
 	@Autowired
 	private OrderService service;
 
-	@PostMapping(value = "/createorder", consumes = "application/json", produces = "application/json")
+	@PostMapping(value = "/create", consumes = "application/json", produces = "application/json")
     @ResponseStatus(HttpStatus.CREATED)
 	public OrderResult createOrder(@Valid @RequestBody CreateOrderCommand createOrderCommand) throws Throwable {
         return service.createOrder(createOrderCommand);
